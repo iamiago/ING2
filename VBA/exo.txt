@@ -1,0 +1,96 @@
+
+Option Explicit
+
+'Exo1.6
+Sub HelloWorld()
+	Debug.Print "Hello World - Excel VBA here"
+End Sub
+
+'Exo1.9
+Public Sub Hello()
+	Dim UserName As String
+	UserName = InputBox("Whats your name?")
+	MsgBox (" Hello " & UserName)
+End Sub
+
+'Exo2.1
+ Sub dep(num As String)
+
+Dim sexe As String
+Dim departement As String
+
+
+sexe = Mid(num, 1, 1)
+departement = Mid(num, 6, 2)
+
+
+If sexe = "1" Then
+
+    If departement = "99" Then
+    
+    MsgBox "né à l'étranger  "
+    
+    Else
+    
+    MsgBox "né dans le " & departement
+    
+    End If
+    
+    
+Else
+    
+     If departement = "99" Then
+    
+        MsgBox "née à l'étranger  "
+    
+    Else
+    
+        MsgBox "née dans le " & departement
+    End If
+    
+
+End If
+
+End Sub
+
+'Exo2.2a
+Public Function setDay(Day As Integer) As String
+Dim Msg As String
+Select Case Day
+    Case Is = 0
+        Msg = "Dimanche"
+    Case Is = 1
+        Msg = "Lundi"
+    Case Is = 2
+        Msg = "Mardi"
+    Case Is = 3
+        Msg = "Mercredi"
+    Case Is = 4
+        Msg = "Jeudi"
+    Case Is = 5
+        Msg = "Vendredi"
+    Case Is = 6
+        Msg = "Samedi"
+End Select
+setDay = Msg
+End Function
+
+'Exo2.2b
+
+Public Function Borne(max As Integer, Optional min As Integer = 0)
+Dim Number As String
+Number = InputBox("Enter a number: ", "Number")
+Do While CInt(Number) < min Or CInt(Number) > max
+    Number = InputBox("Enter an other number: ", "Number")
+Loop
+End Function
+
+Function
+
+test(max as integer, optional min as integer=0)
+
+	dim res as variant
+  dim nombre as variant
+  nombre=InutBox("Entrez votre nombre","")
+  While Cint(nombre)>max or Cint(nombre)>max
+  
