@@ -43,6 +43,7 @@ return coeffs;
 void Polynome::print()
 {
  cout << "Polynome de degre: "<< degre << endl;
+ cout << "P(x) = ";
  for(int i=degre; i>=0; i-- )
  {
     if(i!=0){

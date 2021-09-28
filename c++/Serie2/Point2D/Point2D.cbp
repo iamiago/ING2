@@ -33,6 +33,12 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="main.cpp" />
+		<Unit filename="permuter.cpp" />
+		<Unit filename="permuter.h" />
+		<Unit filename="point3d.cpp" />
+		<Unit filename="point3d.h" />
+		<Unit filename="polynome.cpp" />
+		<Unit filename="polynome.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
