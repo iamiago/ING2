@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1632761439 source:/home/cytech/ING2/c++/CodeBlocks/Point2D/permuter.cpp
+	"permuter.h"
+
+1632216239 /home/cytech/ING2/c++/CodeBlocks/Point2D/permuter.h
+
+1632763634 source:/home/cytech/ING2/c++/CodeBlocks/Point2D/point3d.cpp
+	<iostream>
+	"point3d.h"
+
+1632764225 source:/home/cytech/ING2/c++/CodeBlocks/Point2D/main.cpp
+	<iostream>
+	"permuter.h"
+	"point3d.h"
+	"polynome.h"
+
+1632762697 /home/cytech/ING2/c++/CodeBlocks/Point2D/point3d.h
+
+1632764517 source:/home/cytech/ING2/c++/CodeBlocks/Point2D/polynome.cpp
+	<iostream>
+	"polynome.h"
+
+1632764505 /home/cytech/ING2/c++/CodeBlocks/Point2D/polynome.h
+
