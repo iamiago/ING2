@@ -3,23 +3,30 @@
 
 class Polynome{
 
+//Static = taille fixe
+
 private:
     int degre;
-    int* coeffs;
+    float * coeffs;
 
 public:
 
-    //Coonstructeur & destructeurs
+    //Constructeur & destructeurs
     Polynome();
     Polynome(int deg);
-    Polynome(int deg, int* a);
+    Polynome(int deg, float* a);
     Polynome(Polynome& autre);
     ~Polynome();
 
     //
     int getDegre();
-    int* getCoeffs();
-    Polynome derive();
+    float* getCoeffs();
+    Polynome deriver();
+
+    float recupCoeff(int rang); // on recupere un coeff du polynome
+    void affecterCoeff(int rang, float coeff); // on affecte un coefficient a la position rang
+    float calculP(float x); // calcul du polynome pour un x
+    Polynome & operator = (Polynome & autre);
 
     void print();
 

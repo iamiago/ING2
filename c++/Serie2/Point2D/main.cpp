@@ -47,11 +47,21 @@ int main()
 
     point3.compare(point4) ? cout << "Les point sont égaux \n" : cout << "Les point sont différents \n";
 */
-    int a[] = {2,2,2};
-    Polynome pol(2,a);
+    float a[] = {3,2,1};
+    int deg = 2;
+    Polynome pol(deg,a);
     pol.print();
 
+    //cout <<"Coeff au rang 0 : "<<pol.recupCoeff(0)<< endl;
 
+    for(int i=0; i<=deg; ++i){
+        cout << "Coeff au rang "<< i << " " << pol.recupCoeff(i) << endl;
+    }
+
+    pol.affecterCoeff(0,10);
+    pol.print();
+
+    cout << pol.calculP(1) << endl;
     Polynome pol2(pol);
 
     pol2.print();

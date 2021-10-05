@@ -22,3 +22,26 @@
 
 1632764505 /home/cytech/ING2/c++/CodeBlocks/Point2D/polynome.h
 
+1633433288 source:/home/cytech/ING2/c++/Serie2/Point2D/main.cpp
+	<iostream>
+	"permuter.h"
+	"point3d.h"
+	"polynome.h"
+
+1632216239 /home/cytech/ING2/c++/Serie2/Point2D/permuter.h
+
+1632762697 /home/cytech/ING2/c++/Serie2/Point2D/point3d.h
+
+1633429917 /home/cytech/ING2/c++/Serie2/Point2D/polynome.h
+
+1632761439 source:/home/cytech/ING2/c++/Serie2/Point2D/permuter.cpp
+	"permuter.h"
+
+1632763634 source:/home/cytech/ING2/c++/Serie2/Point2D/point3d.cpp
+	<iostream>
+	"point3d.h"
+
+1633431467 source:/home/cytech/ING2/c++/Serie2/Point2D/polynome.cpp
+	<iostream>
+	"polynome.h"
+
