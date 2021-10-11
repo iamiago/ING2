@@ -92,5 +92,5 @@ test(max as integer, optional min as integer=0)
 	dim res as variant
   dim nombre as variant
   nombre=InutBox("Entrez votre nombre","")
-  While Cint(nombre)>max or Cint(nombre)>max
+  While Cint(nombre)>max or Cint(nombre)<min
   
