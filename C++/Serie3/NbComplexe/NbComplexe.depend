@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1634642390 source:/home/cytech/ING2/C++/Serie3/NbComplexe/main.cpp
+	<iostream>
+	"complexe.h"
+
+1634642551 source:/home/cytech/ING2/C++/Serie3/NbComplexe/complexe.cpp
+	<iostream>
+	<string>
+	"complexe.h"
+
+1634642070 /home/cytech/ING2/C++/Serie3/NbComplexe/complexe.h
+	<iostream>
+
