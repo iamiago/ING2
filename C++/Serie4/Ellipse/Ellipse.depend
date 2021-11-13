@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1636445079 source:/home/cytech/ING2/C++/Serie4/Ellipse/main.cpp
+	<iostream>
+	"cercle.h"
+
+1636444422 /home/cytech/ING2/C++/Serie4/Ellipse/cercle.h
+	"ellipse.h"
+
+1636444526 /home/cytech/ING2/C++/Serie4/Ellipse/ellipse.h
+
+1636445134 source:/home/cytech/ING2/C++/Serie4/Ellipse/ellipse.cpp
+	<iostream>
+	"cercle.h"
+
+1636445119 source:/home/cytech/ING2/C++/Serie4/Ellipse/cercle.cpp
+	<iostream>
+	"cercle.h"
+

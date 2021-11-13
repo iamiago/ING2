@@ -1,0 +1,17 @@
+
+
+un Objet polymorphe est un objet susceptible de prendre plusieurs formes pendant l'exécution
+Le polymorphisme represente la capacite du systeme a choisir dynamiquement la méhtode qui correspond au type de l'objet en cours de manipulation
+Le polymorphisme est implementé e C++ avec les fonction virtuelles
+
+Heritage avec des méthodes vitual implementées dans la classe fille
+
+heritage + virtual : typage dynamique
+
+
+
+Résumée:Fonction virtuelle pure: héritage d'interface
+-classes dérivées doivent hériter l'interface de la fonction
+-classes dérivées concrètes doivent fournir l'implementation de la fonction
+
+fonction virtuelle: héritage d'interface + héritage d'implementation

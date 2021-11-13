@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1636458037 source:/home/cytech/ING2/C++/Serie4/CompteBancaire/comptebancaire.cpp
+	"comptebancaire.h"
+	<iostream>
+	<string>
+
+1636458025 /home/cytech/ING2/C++/Serie4/CompteBancaire/comptebancaire.h
+	<iostream>
+
+1636457750 source:/home/cytech/ING2/C++/Serie4/CompteBancaire/compteepargne.cpp
+	"compteepargne.h"
+
+1636457744 /home/cytech/ING2/C++/Serie4/CompteBancaire/compteepargne.h
+	"comptebancaire.h"
+
+1636458136 source:/home/cytech/ING2/C++/Serie4/CompteBancaire/main.cpp
+	<iostream>
+	"compteepargne.h"
+

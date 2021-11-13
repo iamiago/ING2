@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1636458801 source:/home/cytech/ING2/C++/Serie4/Approximation/main.cpp
+	<iostream>
+
+1636458919 source:/home/cytech/ING2/C++/Serie4/Approximation/racine.cpp
+
+1636460002 source:/home/cytech/ING2/C++/Serie4/Approximation/newton.cpp
+	<iostream>
+	<cmath>
+	"newton.h"
+
+1636459280 /home/cytech/ING2/C++/Serie4/Approximation/newton.h
+	"racine.h"
+
+1636459096 /home/cytech/ING2/C++/Serie4/Approximation/racine.h
+

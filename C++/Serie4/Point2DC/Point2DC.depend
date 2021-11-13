@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1636461047 source:/home/cytech/ING2/C++/Serie4/Point2DC/main.cpp
+	<iostream>
+
+1636461061 source:/home/cytech/ING2/C++/Serie4/Point2DC/Point2D.cpp
+	"Point2D.h"
+	<iostream>
+
+1636461047 /home/cytech/ING2/C++/Serie4/Point2DC/Point2D.h
+

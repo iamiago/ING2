@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1635246158 source:/home/cytech/ING2/C++/Serie3/Vector/main.cpp
+	<iostream>
+	"vector.h"
+
+1635246740 /home/cytech/ING2/C++/Serie3/Vector/vector.h
+	<string>
+
+1635246365 source:/home/cytech/ING2/C++/Serie3/Vector/vector.cpp
+	<iostream>
+	<cassert>
+	"vector.h"
+

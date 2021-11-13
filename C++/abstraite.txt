@@ -1,0 +1,53 @@
+Une classe est dite abstraite si elle contient au moins une fonction virtuelle pure
+Une fonction membre est dite virtuelle pure lorsqu'elle est déclarée de la façon suivante
+virtual type nomMethode(paramètrs )= 0;
+
+class Polygon{
+protected:
+  int width, height;
+
+public:
+  virtual int getArea()=0;
+};
+
+La classe polygon ne peut pas être instanciée: elle est dite abstraite
+...
+
+
+pour resumer
+
+class Shape{
+public:
+  virtual void draw() const = 0; // fonction virtuelle pure
+  virtual void error(const string & msg); //fonction virtuelle
+  int objectID() const;//Fonction non virtuelle
+  ...
+};
+
+class Rectangle:public Shape{...};
+
+class Ellipse: public Shape{...};
+
+Si on ne met pas le mot clef virtual on ne peut pas la redefinir dans la classe dérivée
+
+Fonction virtuelle pure: héritage d'interface
+(-classe dérivées doivent hériter l'interface de la fonction
+ -classes dérivées concrèstes doivent fourninr)
+Fonction virtuelle: héritage d'interface + héritage d'implémentation par défaut
+
+Fonction non-virtuelle: héritage d'interface + héritage d'implémentation obligatoire
+(classes dérivées doivent hériter l'interface et l'implementation de la fonction (invariance par rapport aux spécialisations))
+
+vocabulaire:
+
+Variable: est d'un type donné, défini une foispour toute (type prédéfinid dans le langage ou crée par le développeur)
+Encapsulation: regroupement des variables et des fonctions au sein d'une même entité appelée classe
+protected (friend et classe fille ont accès)
+
+classe: prototype qui définit des attributs et des méthodes communes à tous les objets d'une certaine nature
+interface de classe: description de la structure internet de la classe inculuant une list de données membres et prototypes des fonctions membrs dans un .h
+implementation de classe: definition code des fonctions déclarées dans l'interface de la classe dans une .CPP
+instanciation d'un objet: permet de créer un objet d'un type donné; analgue à une  déclaration de variables
+héritage: permet de définir
+
+

@@ -1,0 +1,22 @@
+En c++ on a l'heritage multiple
+En java on a pas d'heritage multiple, seulement l'heritage simple
+on utilise des interface avec des implements
+interface: un classe avec des méthodes qui ne sont pas implementées ( on ne peut pas l'instancier )
+en c++ le mot inerface n'existe pas, mais on observe le même phénomène
+une classe qui possède des méthodes implementées et non implementées est abstraite
+
+L'heritage permet de spécialiser une classe en définissant une relation de type "est une sorte de"
+
+instancié une classe : crée un objet qi suit les comportements de la classe
+une méthode qui n'est pas encore implementée dans la classe mère
+pour instancier une classe il faut que l'objet deriver de cette classe puisser utiliser toute les méthodes de la classe
+
+héritage multiple:
+
+class A {...};
+class B {...};
+class C: public A, public B {...};
+
+la classe C hérite de A et B: une instance de C possède à la fois les données et les fonctions memebres de A et B.
+Quand un objet est créé, le constructeur A est appelé en premier, en suite celui de B (dans l'ordre).
+Quand un objet est détruit, le destructeur de B est appelé en premier, après celui de A (sens inverse).
