@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1632682766 source:c:\homep\homep-rachid\cours\c-c++\cours-c++\2020-2021-ing2-mf\coursmf\se1-intro-specifités\finance\exo4finance\fonctions.cpp
+	<iostream>
+	"fonctions.h"
+
+1632682870 .h"
+
+1632682846 c:\homep\homep-rachid\cours\c-c++\cours-c++\2020-2021-ing2-mf\coursmf\se1-intro-specifités\finance\exo4finance\fonctions.h
+
+1632682766 source:c:\homep\homep-rachid\cours\c-c++\cours-c++\2020-2021-ing2-mf\coursmf\se1-intro-specifités\finance\exo34finance\fonctions.cpp
+	<iostream>
+	"fonctions.h"
+
+1632682846 c:\homep\homep-rachid\cours\c-c++\cours-c++\2020-2021-ing2-mf\coursmf\se1-intro-specifités\finance\exo34finance\fonctions.h
+
+1632682870 source:c:\homep\homep-rachid\cours\c-c++\cours-c++\2020-2021-ing2-mf\coursmf\se1-intro-specifités\finance\exo34finance\main.cpp
+	<iostream>
+	"fonctions.h"
+
+1632679168 source:/home/cytech/ING2/C++/Serie1/exo3Finance/fonctions.cpp
+	<iostream>
+	"fonctions.h"
+
+1632679248 /home/cytech/ING2/C++/Serie1/exo3Finance/fonctions.h
+
+1632679986 source:/home/cytech/ING2/C++/Serie1/exo3Finance/main.cpp
+	<iostream>
+	"fonctions.h"
+

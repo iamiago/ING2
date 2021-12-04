@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1637582812 source:/home/cytech/ING2/C++/Serie 5/Tournois/equipe.cpp
+	"equipe.h"
+
+1637584184 /home/cytech/ING2/C++/Serie 5/Tournois/equipe.h
+
+1637584224 source:/home/cytech/ING2/C++/Serie 5/Tournois/main.cpp
+	<string>
+	<iostream>
+

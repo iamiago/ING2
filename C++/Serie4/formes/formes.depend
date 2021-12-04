@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1636973485 source:e:\rachid\cours\c-c++\cours-c++\2021-2022-ing2-mf\coursmf\se4_heritage_polymophisme\formes\cercle.cpp
+	"cercle.h"
+	<iostream>
+
+1636973531 e:\rachid\cours\c-c++\cours-c++\2021-2022-ing2-mf\coursmf\se4_heritage_polymophisme\formes\cercle.h
+	"figure.h"
+
+1603286568 e:\rachid\cours\c-c++\cours-c++\2021-2022-ing2-mf\coursmf\se4_heritage_polymophisme\formes\figure.h
+
+1636973390 source:e:\rachid\cours\c-c++\cours-c++\2021-2022-ing2-mf\coursmf\se4_heritage_polymophisme\formes\carre.cpp
+	<iostream>
+	"carre.h"
+
+1636973557 e:\rachid\cours\c-c++\cours-c++\2021-2022-ing2-mf\coursmf\se4_heritage_polymophisme\formes\carre.h
+	"figure.h"
+
+1636972942 source:e:\rachid\cours\c-c++\cours-c++\2021-2022-ing2-mf\coursmf\se4_heritage_polymophisme\formes\main.cpp
+	<iostream>
+	"carre.h"
+	"dessin.h"
+	"cercle.h"
+	"triangle.h"
+
+1636972494 e:\rachid\cours\c-c++\cours-c++\2021-2022-ing2-mf\coursmf\se4_heritage_polymophisme\formes\dessin.h
+	"figure.h"
+	<vector>
+	<iostream>
+
+1636972292 source:e:\rachid\cours\c-c++\cours-c++\2021-2022-ing2-mf\coursmf\se4_heritage_polymophisme\formes\dessin.cpp
+	"dessin.h"
+
+1636973409 e:\rachid\cours\c-c++\cours-c++\2021-2022-ing2-mf\coursmf\se4_heritage_polymophisme\formes\triangle.h
+	"figure.h"
+
+1636973082 source:e:\rachid\cours\c-c++\cours-c++\2021-2022-ing2-mf\coursmf\se4_heritage_polymophisme\formes\triangle.cpp
+	"triangle.h"
+	<iostream>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1638179950 source:/home/cytech/ING2/C++/Serie 5/EntreSortie/main.cpp
+	<iostream>
+	<fstream>
+	<cstring>
+

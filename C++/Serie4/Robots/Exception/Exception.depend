@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1638181615 source:/home/cytech/ING2/C++/Serie4/Robots/Exception/main.cpp
+	<iostream>
+	<string>
+

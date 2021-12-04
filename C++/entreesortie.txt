@@ -1,0 +1,90 @@
+ecriture et lecture de bas niveau
+(prog.exe et disque dure)
+open (canaux entre prog.exe et disque dure)
+close
+
+
+ecriture et lecture de haut niveau
+(prog.exe -> ram -> disque dure)
+fprintf
+fscanf
+f file , f formater (sur la ram)
+open (canaux entre prog.exe et ram et ram et disque dure)
+close
+
+on ecrit sur le buffeur sur la ram (lorqu'il est plein on le vide sur le disque dure)
+
+FILE * stdin;
+FILE * stdout;
+FILE * stderr;
+
+bas niveau
+un fichier est répérée par son numéro unique par son "descripteur"
+int file = open('',)
+
+
+
+haut niveau (fichiers formatés et non pas un fichier définir par une descripteur , un entier)
+FILE * file = open
+Structure des donnée FILE sur la ram (contient des informations: droits d'accès... etc)
+fopen(fichier,'r') = ouvre un fichier formaté en mode lecture
+
+while(!feof(inputFile)) tant que nous sommes pas à la fin du fichier
+fputc(fgetc(inputFile),stdout); tant que il y a des characters a lire on le lit et on le met sur lecran
+
+fclose (inputFile); important sinon fichier corrompu (il perd les symboles de début et de fin)
+
+
+en C++
+stdin = cin
+stdout = cout
+stderr = cerr
+
+friend = amis ce n'est pas une méthode de classe 
+méthode amis = implementée en dehors de la classe
+elle a accès a toutes les propriétés privées de la classe
+sinon elle n'aurait pas accès aux propriétés privées de la classe
+"on surcharge l'operateur >>" pour qu'il affiche ce qu'on souhaite
+
+
+
+fichier phyisque collection d'octet sauvegardés sr un support physique
+fichier logique variable liée au fichier physique,utilisé dans le programme
+il faut l'ouvrir et le fermer sinon fichier corrompu
+
+<fstream> 
+regroupe ofstream pour ecrire dans les fichiers
+	
+	ouvrir en mode lecture
+	ifstream nom_fichier_logique("chemin_fichier_physique);
+	
+	ouvrir en mode ecriture
+	ofstream fichier_logique("fichier_physique",[mode]);
+	
+	ios::in -> lecture
+	ios::out -> ecriture
+	ios::app -> ajouter à la fin append
+	ios::ate -> met le curseur à la fin du fichier (at end)
+	ios::binary -> ouvre un fichier binaire
+	ios::trunc ->
+	
+	pour ecrire dans un fichier on utlise << pour les type simples
+	
+	
+	
+Soit on ecrit du text soit un ecrit du binaire
+propriétés fichier txt et fichier binaire
+
+
+soit on lit ligne par ligne si on a du text jusqu'à la fin de la ligne character fin de ligne \n
+getline() -> retourne un boolean vrai s'il reste des donnes
+		-> faux si c'est la fin du fichier
+
+character fin de fichier
+
+en binaire on a un paquet d'octets
+il suffit de connaitre la taille d'un octet
+acces direct
+deplacer le curseur au debut du paquet que l'on souhaite
+
+eof() renvoie true si un fichier ouvert en lecture est à la find

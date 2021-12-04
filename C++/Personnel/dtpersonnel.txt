@@ -1,0 +1,6 @@
+V Business Pierre 1960 30000 #vendeur
+R Vendtout Leon 1980 20000 #representant
+T Bosseur Yves 1975 1000 #technicien
+M Stocketout Jeanne 1970 45 #manutentionaire
+T Flippe Jean 1976 1000 #technicien
+M Abordage Alain 1975 45 #manutentionaire

@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1638106477 source:/home/cytech/ING2/C++/Serie4/Robots/Tout/main.cpp
+	<iostream>
+	"polynome.h"
+	"fraction.h"
+	"vector.h"
+	"finance.h"
+
+1638105930 /home/cytech/ING2/C++/Serie4/Robots/Tout/polynome.h
+	<iostream>
+
+1638105803 source:/home/cytech/ING2/C++/Serie4/Robots/Tout/polynome.cpp
+	"polynome.h"
+
+1638105342 source:/home/cytech/ING2/C++/Serie4/Robots/Tout/fraction.cpp
+	"fraction.h"
+	<iostream>
+
+1638105930 /home/cytech/ING2/C++/Serie4/Robots/Tout/fraction.h
+	<iostream>
+
+1638105737 source:/home/cytech/ING2/C++/Serie4/Robots/Tout/vector.cpp
+	"vector.h"
+
+1638105929 /home/cytech/ING2/C++/Serie4/Robots/Tout/vector.h
+	<iostream>
+
+1638106677 source:/home/cytech/ING2/C++/Serie4/Robots/Tout/finance.cpp
+	"finance.h"
+	<iostream>
+
+1638106127 /home/cytech/ING2/C++/Serie4/Robots/Tout/finance.h
+
