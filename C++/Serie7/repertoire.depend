@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1638782137 source:e:\rachid\cours\c-c++\cours-c++\2021-2022-ing2-mf\coursmf\se7_template_stl\tp7_stl\repertoire\main.cpp
+	"contact.h"
+
+1638782210 "
+
+1638782182 e:\rachid\cours\c-c++\cours-c++\2021-2022-ing2-mf\coursmf\se7_template_stl\tp7_stl\repertoire\contact.h
+	<map>
+	<string>
+	<iostream>
+
+1638782182 
+
+1638782210 source:e:\rachid\cours\c-c++\cours-c++\2021-2022-ing2-mf\coursmf\se7_template_stl\tp7_stl\repertoire\contact.cpp
+	<map>
+	"contact.h"
+
+1638782212 source:/home/cytech/ING2/C++/Serie7/contact.cpp
+	<map>
+	"contact.h"
+
+1638782184 /home/cytech/ING2/C++/Serie7/contact.h
+	<map>
+	<string>
+	<iostream>
+
+1638866060 source:/home/cytech/ING2/C++/Serie7/main.cpp
+	"contact.h"
+

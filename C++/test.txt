@@ -1,0 +1,240 @@
+//class nominal, class canonique: constructeur par defaut, constructeur par recopie, surcharge d'operateur d'affectation et destructeur
+//const a gauche et const a droite
+//const de la class, const de l'appelé
+//& et commercial ce n'est pas une copie c'est l'objet lui même, le vecteur qui est retourné ce n'est pas la copie  ou un vecteur que l'on a crée mais le vecteur lui même
+//Qu'est ce que ça veut dire surcharger et re-definir?
+//Surcharge:
+//Rédéfinition: On a le même prototype avec les memes arguments et memes types, c'est le comportement qui change (si on l'appelle sur un autre objet)
+//La rédéfinition concerne uniquement l'héritage
+
+//Méthode surchargée : plusieurs fois la même méthode dans une même classe, avec le même nom mais avec des paramètres différents.
+//Méthode redéfinie : une méthode dans une classe fille qui porte le même nom et possède les mêmes paramètres qu'une méthode de sa classe mère.
+
+//Diff entre java et c++: Java, programmation objet, toute les méthodes sont dans une classe, même le main
+//C++ est un langage procédurale orienté objet
+//en c++ on compile et on obtient un fichier executable (micro procésseur va l'executeur)
+//Java c'est du bytecode, il faut une machine virtuelle pour l'executeur, pour transforme le bytecode en exécutable pour la machine en question (linux, windows ou mac)
+//l'executable de linux ne fonctionnera pas sur windows
+//Java est multi platforme, le bytecode est exécutable dans n'importe quel OS
+
+//Encapsulation: on protège les propriétés, on ne peut y acceder que par les méthodes de la classe (private)
+
+//Java héritage simple -> interface avec implements
+//C++ heritage multiple
+
+virtual //autorise la redéfinition de la fonction dans les classes dérivés
+
+//interface: classe où l'on trouve que les prototypes des méthodes (n'est pas instantiable)
+
+// le constructeur de la classe dérivée appelle généralmenet un des constructers de la classe de base
+
+//design pattern regroupement de classe qui fait une grosse fonctionnalité
+//assemblage d'un nombre de classe pour créer une fonctionnalité
+//Pattern singleton -> gerer l'accès unique a une base de données
+
+//Lorsqu'on a besoin d'être prêt de la machine
+//en reseau par exemple
+//on utilise les pointeurs de pointeurs plutot que vector
+//car plus rapide
+
+//association (lien générique) héritage ,implémentation, agrégation, composition
+virtual void parcourir() = 0;  -> classe abstraite car on a une méthode virtual pure
+
+/editeur de lien -> includes
+//inline pendant la compilation il remplace le prototype de la fct par le corps de la fct
+//on a pas le droit de l'utiliser pour les fonction recursives
+//et lorsque il y a des pointeurs (car on ne connait pas à l'avance la taille)
+// lorsqu'on utilise la même fonction plusieurs fois (car ça ralonge le code)
+
+//static <-> constante globale
+//methode ou var static varialbe de classe non pas une variable d'instance
+//on peut acceder directement par la classe pas besoin d'un objet
+//accessible par toutes les methodes de la classe
+//protected je ne peux pas voir de l'exterieur
+//les classes friend ou les classes qui heritent ont accès
+
+
+Une classe est dite abstraite si elle contient au moins une fonction virtuelle pure
+Une fonction membre est dite virtuelle pure lorsqu'elle est déclarée de la façon suivante
+virtual type nomMethode(paramètrs )= 0;
+
+class Polygon{
+protected:
+  int width, height;
+
+public:
+  virtual int getArea()=0;
+};
+
+La classe polygon ne peut pas être instanciée: elle est dite abstraite
+...
+
+
+pour resumer
+
+class Shape{
+public:
+  virtual void draw() const = 0; // fonction virtuelle pure
+  virtual void error(const string & msg); //fonction virtuelle
+  int objectID() const;//Fonction non virtuelle
+  ...
+};
+
+class Rectangle:public Shape{...};
+
+class Ellipse: public Shape{...};
+
+Si on ne met pas le mot clef virtual on ne peut pas la redefinir dans la classe dérivée
+
+Fonction virtuelle pure: héritage d'interface
+(-classe dérivées doivent hériter l'interface de la fonction
+ -classes dérivées concrèstes doivent fourninr)
+Fonction virtuelle: héritage d'interface + héritage d'implémentation par défaut
+
+Fonction non-virtuelle: héritage d'interface + héritage d'implémentation obligatoire
+(classes dérivées doivent hériter l'interface et l'implementation de la fonction (invariance par rapport aux spécialisations))
+
+vocabulaire:
+
+Variable: est d'un type donné, défini une foispour toute (type prédéfinid dans le langage ou crée par le développeur)
+Encapsulation: regroupement des variables et des fonctions au sein d'une même entité appelée classe
+protected (friend et classe fille ont accès)
+
+classe: prototype qui définit des attributs et des méthodes communes à tous les objets d'une certaine nature
+interface de classe: description de la structure internet de la classe inculuant une list de données membres et prototypes des fonctions membrs dans un .h
+implementation de classe: definition code des fonctions déclarées dans l'interface de la classe dans une .CPP
+instanciation d'un objet: permet de créer un objet d'un type donné; analgue à une  déclaration de variables
+héritage: permet de définir
+
+En c++ on a l'heritage multiple
+En java on a pas d'heritage multiple, seulement l'heritage simple
+on utilise des interface avec des implements
+interface: un classe avec des méthodes qui ne sont pas implementées ( on ne peut pas l'instancier )
+en c++ le mot inerface n'existe pas, mais on observe le même phénomène
+une classe qui possède des méthodes implementées et non implementées est abstraite
+
+L'heritage permet de spécialiser une classe en définissant une relation de type "est une sorte de"
+
+instancié une classe : crée un objet qi suit les comportements de la classe
+une méthode qui n'est pas encore implementée dans la classe mère
+pour instancier une classe il faut que l'objet deriver de cette classe puisser utiliser toute les méthodes de la classe
+
+héritage multiple:
+
+class A {...};
+class B {...};
+class C: public A, public B {...};
+
+la classe C hérite de A et B: une instance de C possède à la fois les données et les fonctions memebres de A et B.
+Quand un objet est créé, le constructeur A est appelé en premier, en suite celui de B (dans l'ordre).
+Quand un objet est détruit, le destructeur de B est appelé en premier, après celui de A (sens inverse).
+
+
+
+un Objet polymorphe est un objet susceptible de prendre plusieurs formes pendant l'exécution
+Le polymorphisme represente la capacite du systeme a choisir dynamiquement la méhtode qui correspond au type de l'objet en cours de manipulation
+Le polymorphisme est implementé e C++ avec les fonction virtuelles
+
+Heritage avec des méthodes vitual implementées dans la classe fille
+
+heritage + virtual : typage dynamique
+
+
+
+Résumée:Fonction virtuelle pure: héritage d'interface
+-classes dérivées doivent hériter l'interface de la fonction
+-classes dérivées concrètes doivent fournir l'implementation de la fonction
+
+fonction virtuelle: héritage d'interface + héritage d'implementation
+
+
+ecriture et lecture de bas niveau
+(prog.exe et disque dure)
+open (canaux entre prog.exe et disque dure)
+close
+
+
+ecriture et lecture de haut niveau
+(prog.exe -> ram -> disque dure)
+fprintf
+fscanf
+f file , f formater (sur la ram)
+open (canaux entre prog.exe et ram et ram et disque dure)
+close
+
+on ecrit sur le buffeur sur la ram (lorqu'il est plein on le vide sur le disque dure)
+
+FILE * stdin;
+FILE * stdout;
+FILE * stderr;
+
+bas niveau
+un fichier est répérée par son numéro unique par son "descripteur"
+int file = open('',)
+
+
+
+haut niveau (fichiers formatés et non pas un fichier définir par une descripteur , un entier)
+FILE * file = open
+Structure des donnée FILE sur la ram (contient des informations: droits d'accès... etc)
+fopen(fichier,'r') = ouvre un fichier formaté en mode lecture
+
+while(!feof(inputFile)) tant que nous sommes pas à la fin du fichier
+fputc(fgetc(inputFile),stdout); tant que il y a des characters a lire on le lit et on le met sur lecran
+
+fclose (inputFile); important sinon fichier corrompu (il perd les symboles de début et de fin)
+
+
+en C++
+stdin = cin
+stdout = cout
+stderr = cerr
+
+friend = amis ce n'est pas une méthode de classe 
+méthode amis = implementée en dehors de la classe
+elle a accès a toutes les propriétés privées de la classe
+sinon elle n'aurait pas accès aux propriétés privées de la classe
+"on surcharge l'operateur >>" pour qu'il affiche ce qu'on souhaite
+
+
+
+fichier phyisque collection d'octet sauvegardés sr un support physique
+fichier logique variable liée au fichier physique,utilisé dans le programme
+il faut l'ouvrir et le fermer sinon fichier corrompu
+
+<fstream> 
+regroupe ofstream pour ecrire dans les fichiers
+	
+	ouvrir en mode lecture
+	ifstream nom_fichier_logique("chemin_fichier_physique);
+	
+	ouvrir en mode ecriture
+	ofstream fichier_logique("fichier_physique",[mode]);
+	
+	ios::in -> lecture
+	ios::out -> ecriture
+	ios::app -> ajouter à la fin append
+	ios::ate -> met le curseur à la fin du fichier (at end)
+	ios::binary -> ouvre un fichier binaire
+	ios::trunc ->
+	
+	pour ecrire dans un fichier on utlise << pour les type simples
+	
+	
+	
+Soit on ecrit du text soit un ecrit du binaire
+propriétés fichier txt et fichier binaire
+
+
+soit on lit ligne par ligne si on a du text jusqu'à la fin de la ligne character fin de ligne \n
+getline() -> retourne un boolean vrai s'il reste des donnes
+		-> faux si c'est la fin du fichier
+
+character fin de fichier
+
+en binaire on a un paquet d'octets
+il suffit de connaitre la taille d'un octet
+acces direct
+deplacer le curseur au debut du paquet que l'on souhaite
+
+eof() renvoie true si un fichier ouvert en lecture est à la find

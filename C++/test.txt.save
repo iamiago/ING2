@@ -1,10 +1,4 @@
-#ifndef VECTOR_H_INCLUDED
-#define VECTOR_H_INCLUDED
-#include <string>
-
-using namespace std;
-
-//class nominal, class canonique: constructeur par defaut, constructeur par recopie, surcharge d'operateur d'affectation et destructeur
+	//class nominal, class canonique: constructeur par defaut, constructeur par recopie, surcharge d'operateur d'affectation et destructeur
 //const a gauche et const a droite
 //const de la class, const de l'appelé
 //& et commercial ce n'est pas une copie c'est l'objet lui même, le vecteur qui est retourné ce n'est pas la copie  ou un vecteur que l'on a crée mais le vecteur lui même
@@ -28,32 +22,5 @@ using namespace std;
 //Java héritage simple -> interface avec implements
 //C++ heritage multiple
 
+virtual //autorise la redéfinition de la fonction dans les classes dérivés
 
-class Vector {
-
-    private:
-        double* pelem;
-        unsigned int sz;
-        string name;
-
-
-    public:
-        Vector() {sz=0;} // Constructeur par defaut
-        Vector(unsigned int s);
-        Vector(unsigned int s, string nom);
-        Vector(const Vector& v); // constructeur de copie
-        Vector& operator=(const Vector &a); //Surcharge de l'opérateur de surcharge
-        //valeur d'une position donné du vecteur
-        double& operator[] (unsigned int i) const; //Surcharge de l'objet à la positio i
-        //assigner une valeur a une position donné
-        Vector & operator()(unsigned int i, double val); //Surchage de la modification d'un objet à la position i
-        Vector operator+(const Vector& a) const;
-        Vector operator*(const Vector& a) const;
-        virtual void afficher()=0;
-
-        void affiche();
-        ~Vector(); //destructeur {delete[] elem;}
-};
-
-
-#endif // VECTOR_H_INCLUDED
